@@ -20,6 +20,7 @@ jobs:
       uses: microsoft/setup-msbuild@v2.0.0
       with: 
         vs-version: '[16.10.1)'
+        msbuild-architecture: x64
 
     - name: Build the solution
       run: msbuild /p:Configuration=Release M-Centres_2.0.sln
