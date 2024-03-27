@@ -21,6 +21,7 @@ jobs:
       with: 
         vs-version: '[16.10.1,16.10.4)'
         msbuild-architecture: x64
+        vswhere-path: 'C:\Program Files\Microsoft Visual Studio\Installer'
 
     - name: Build the solution
       run: msbuild /p:Configuration=Release M-Centres_2.0.sln
