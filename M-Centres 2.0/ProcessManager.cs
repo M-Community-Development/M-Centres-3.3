@@ -36,10 +36,10 @@ namespace M_Centres_2._0
         static WebClient client;
         static class Paths
         {
-            public static string basex64Dll = "https://raw.githubusercontent.com/tinedpakgamer/mcenterdlls/main/{identity}/x64/Windows.ApplicationModel.Store.dll";
-            public static string basex64opcode = "https://raw.githubusercontent.com/tinedpakgamer/mcenterdlls/main/{identity}/x64/opcodes.json";
-            public static string basex86Dll = "https://raw.githubusercontent.com/tinedpakgamer/mcenterdlls/main/{identity}/x86/Windows.ApplicationModel.Store.dll";
-            public static string basex86opcode = "https://raw.githubusercontent.com/tinedpakgamer/mcenterdlls/main/{identity}/x86/opcodes.json";
+            public static string basex64Dll = "https://raw.githubusercontent.com/misike12/mcenterdlls/main/{identity}/x64/Windows.ApplicationModel.Store.dll";
+            public static string basex64opcode = "https://raw.githubusercontent.com/misike12/mcenterdlls/main/{identity}/x64/opcodes.json";
+            public static string basex86Dll = "https://raw.githubusercontent.com/misike12/mcenterdlls/main/{identity}/x86/Windows.ApplicationModel.Store.dll";
+            public static string basex86opcode = "https://raw.githubusercontent.com/misike12/mcenterdlls/main/{identity}/x86/opcodes.json";
 
             public static List<string> database { 
                get  {
@@ -51,7 +51,7 @@ namespace M_Centres_2._0
                     try
                     {
                       
-                         client.DownloadFile("https://raw.githubusercontent.com/tinedpakgamer/mcenterdlls/main/main", "temp/main");
+                         client.DownloadFile("https://raw.githubusercontent.com/misike12/mcenterdlls/main/main", "temp/main");
                     }
                     catch(WebException es)
                     {

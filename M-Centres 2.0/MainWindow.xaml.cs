@@ -173,7 +173,7 @@ namespace M_Centres_2._0
             if (discord_cooldown == 0)
             {
                 i.Text = "Opening!";
-                Process.Start("https://discord.gg/qnfhEmyDdx");
+                Process.Start("https://discord.gg/SgxkZh5MQH");
             }
             if (discord_cooldown > 0)
                 i.Text = "Do not spam ;)";
