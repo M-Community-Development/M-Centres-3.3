@@ -19,7 +19,7 @@ jobs:
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v2.0.0
       with: 
-        vs-version: '[16.0)'
+        vs-version: '[16.10.1)'
 
     - name: Build the solution
       run: msbuild /p:Configuration=Release M-Centres_2.0.sln
