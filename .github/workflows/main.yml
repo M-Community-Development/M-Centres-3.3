@@ -15,6 +15,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4.1.2
 
+        # Check available MSBuild versions
+    - name: Check available MSBuild versions
+      run: |
+        where msbuild
+
     # Setup .NET environment  
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v2.0.0
