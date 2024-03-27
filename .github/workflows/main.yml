@@ -28,7 +28,7 @@ jobs:
 
     # Build the project
     - name: Build the solution
-      run: msbuild /p:Configuration=Release M-Centres 2.0.sln
+      run: msbuild /p:Configuration=Release M-Centres_2.0.sln
 
     # Run unit tests (if applicable)
     # - name: Run unit tests
