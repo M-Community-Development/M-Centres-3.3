@@ -19,8 +19,8 @@ jobs:
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v2.0.0
       with: 
-        vs-version: '[16.8,17.0)'  # Allow versions between 16.8 and 17.0 (adjust as needed)
-        msbuild-architecture: x64  # Optional: Specify architecture
+        vs-version: '[16.10.1,16.10.4)'
+        msbuild-architecture: x64
 
     - name: Build the solution
       run: msbuild /p:Configuration=Release M-Centres_2.0.sln
