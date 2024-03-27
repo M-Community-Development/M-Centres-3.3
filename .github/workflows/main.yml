@@ -17,14 +17,14 @@ jobs:
     - uses: actions/checkout@v3
 
     # Setup .NET environment  
-    - name: Install .NET
-      uses: microsoft/setup-msbuild@v1
-      with:
-        msbuild-version: '16.0'  # You can adjust the version based on your project
+    - name: Add msbuild to PATH
+    uses: microsoft/setup-msbuild@v1.1
+    with:
+      vs-version: '[16.0)'
 
     # Restore NuGet packages  
-    - name: Restore NuGet packages
-      run: nuget restore M-Centres_2.0\M-Centres_2.0.csproj
+    # - name: Restore NuGet packages
+    #  run: nuget restore M-Centres_2.0\M-Centres_2.0.csproj
 
     # Build the project
     - name: Build the solution
