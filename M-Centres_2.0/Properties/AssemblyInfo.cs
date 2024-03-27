@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("M-Centres")]
 [assembly: AssemblyProduct("M-Centres Mod Installer 3.3.0 Web Edition")]
-[assembly: AssemblyCopyright("M-Centres©  2021")]
+[assembly: AssemblyCopyright("M-Centres©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
