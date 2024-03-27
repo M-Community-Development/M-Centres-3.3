@@ -15,8 +15,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4.1.2
 
-    - name: Setup csc.exe
-      uses: yoavain/Setup-CSC@v5
+    # Setup .NET environment  
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v2.0.0
       with: 
         vs-version: '[16.10.1,16.10.4)'
         msbuild-architecture: x64
