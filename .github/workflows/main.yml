@@ -24,7 +24,7 @@ jobs:
 
     # Restore NuGet packages  
     - name: Restore NuGet packages
-      run: nuget restore M-Centres\2.0\M-Centres 2.0.csproj
+      run: nuget restore M-Centres 2.0\M-Centres 2.0.csproj
 
     # Build the project
     - name: Build the solution
