@@ -1,0 +1,37 @@
+# This workflow defines a build and test process for your .NET project
+
+name: Build and test
+
+# Triggers the workflow on pushes to the main branch
+on:
+  push:
+    branches: [ main ]
+
+# Jobs section defines the execution environment for the steps
+jobs:
+  build:
+    runs-on: windows-latest  # This workflow will run on a Windows machine
+
+    steps:
+    # Checkout the code from the repository
+    - uses: actions/checkout@v3
+
+    # Setup .NET environment  
+    - name: Install .NET
+      uses: microsoft/setup-msbuild@v1
+      with:
+        msbuild-version: '16.0'  # You can adjust the version based on your project
+
+    # Restore NuGet packages  
+    - name: Restore NuGet packages
+      run: nuget restore M-Centres\2.0\M-Centres 2.0.csproj
+
+    # Build the project
+    - name: Build the solution
+      run: msbuild /p:Configuration=Release M-Centres 2.0.sln
+
+    # Run unit tests (if applicable)
+    # - name: Run unit tests
+    #   run: dotnet test M-Centres\2.0\M-Centres 2.0.csproj --configuration Release
+
+  # You can add additional jobs for other tasks like publishing the build artifacts etc.
