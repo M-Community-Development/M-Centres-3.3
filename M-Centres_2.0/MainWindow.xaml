@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:M_Centres_2._0"
         mc:Ignorable="d"
-        Title="M Centres 3.3 Web Edition" Height="626" Width="989" Icon="Untitled.png" WindowStyle="ThreeDBorderWindow" BorderThickness="1" BorderBrush="Black" Background="White" SizeChanged="Window_SizeChanged" FontFamily="Courier New" FontSize="20" Foreground="White" MinWidth="989" MinHeight="626" Padding="10,0">
+        Title="M Centres 3.4 Web Edition" Height="626" Width="989" Icon="Untitled.png" WindowStyle="ThreeDBorderWindow" BorderThickness="1" BorderBrush="Black" Background="White" SizeChanged="Window_SizeChanged" FontFamily="Courier New" FontSize="20" Foreground="White" MinWidth="989" MinHeight="626" Padding="10,0">
     <Window.Resources>
 
         <Style BasedOn="{StaticResource {x:Type MenuItem}}" TargetType="{x:Type MenuItem}" x:Key="PopupMenuItem">
@@ -52,10 +52,14 @@
     </Window.Resources>
 
     <Grid x:Name="olk">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="751*"/>
+            <ColumnDefinition Width="228*"/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <SolidColorBrush Color="#FF007ACC" Opacity="0.9"/>
         </Grid.Background>
-        <RichTextBox x:Name="agree" BorderBrush="Black" BorderThickness="2" Height="254" VerticalAlignment="Top" HorizontalAlignment="Left" Width="790" TextChanged="agree_TextChanged" Foreground="#FF020000" IsReadOnly="True" VerticalScrollBarVisibility="Visible" SelectionBrush="#FF4C5513" ContextMenu="{DynamicResource fh}">
+        <RichTextBox x:Name="agree" BorderBrush="Black" BorderThickness="2" Height="254" VerticalAlignment="Top" HorizontalAlignment="Left" Width="790" TextChanged="agree_TextChanged" Foreground="#FF020000" IsReadOnly="True" VerticalScrollBarVisibility="Visible" SelectionBrush="#FF4C5513" ContextMenu="{DynamicResource fh}" Grid.ColumnSpan="2">
 
             <RichTextBox.Background>
                 <SolidColorBrush Color="White" Opacity="0.6"/>
@@ -132,10 +136,10 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="Discord Support" HorizontalAlignment="Right" Height="32.248" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="217.6" Padding="5" Click="Button_Click_1" Foreground="Black">
-          
+        <Button Content="Discord Support" HorizontalAlignment="Right" Height="32" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="218" Padding="5" Click="Button_Click_1" Foreground="Black" Grid.ColumnSpan="2">
+
         </Button>
-        <Border x:Name="conte" BorderBrush="Black" BorderThickness="1" Margin="10,0,10,47.248" Padding="10" Height="110.752" VerticalAlignment="Bottom">
+        <Border x:Name="conte" BorderBrush="Black" BorderThickness="1" Margin="10,0,10,47" Padding="10" Height="111" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
             <Border.Background>
                 <SolidColorBrush Color="White" Opacity="0.6"/>
             </Border.Background>
@@ -153,14 +157,14 @@
                 </Grid.ColumnDefinitions>
 
                 <Button x:Name="mian_but" Content="Button" Height="52.852" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="261.47" ToolTip="Installs dll version of hack to C:\Windows" Click="mian_but_Click" Foreground="Black">
-                    
+
                 </Button>
 
                 <Button x:Name="nondll_main"  Content="Use hack without &#xA;Install(beta)" Height="52.852" Margin="1,10,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Grid.Column="2" HorizontalAlignment="Left" Width="261.47" ToolTip="Upcoming feature that enables trial remove without modifiyng dlls" Foreground="Black" Click="Button_Click_3">
-                   
+
                 </Button>
                 <Button  Content="DLL Repair" Height="52.852" Margin="0,0,0,-12.852" VerticalAlignment="Top" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="261.47" Grid.Row="1" Grid.Column="1" ToolTip="Replace missing and currupt or modified dlls with fresh dlls from MS Servers" Click="Button_Click" Foreground="Black">
-                  </Button>
+                </Button>
 
             </Grid>
         </Border>

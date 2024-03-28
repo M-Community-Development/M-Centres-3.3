@@ -278,12 +278,12 @@ namespace M_Centres_2._0
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://discord.gg/qnfhEmyDdx");
+            Process.Start("https://discord.gg/SgxkZh5MQH");
         }
 
         private void button_Click_2(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://www.youtube.com/c/MCentres99");
+            Process.Start("https://www.youtube.com/@officialmcommunity");
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
