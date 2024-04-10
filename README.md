@@ -22,7 +22,7 @@
 
 ## How to compile M Centres
 
--  Download VS Code 2019 version 16.0.3.0 using [Chocolatey](https://chocolatey.org/)
+-  Download Visual Studio 2019 version 16.0.3.0 using [Chocolatey](https://chocolatey.org/)
  `choco install visualstudio2019community --version=16.0.3.0`
 - Download .Net SDK in Visual Studio 2019
 - Import the .snl file into Visual Studio
