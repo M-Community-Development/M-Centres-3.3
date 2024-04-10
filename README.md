@@ -26,8 +26,7 @@
  `choco install visualstudio2019community --version=16.0.3.0`
 - Download .Net SDK in Visual Studio 2019
 - Import the .snl file into Visual Studio
-- Add missing DLLs from [this](https://github.com/Max-RM/mcenterdlls) repo
-- Click build, and you're done
+- Click build
 
 ### Folder structure of the compiled program 
 ```
