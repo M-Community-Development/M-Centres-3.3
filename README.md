@@ -2,7 +2,7 @@
 ### This repository contains a simple guide for building M Centres 3.3  from source code; M Centres is a software to unlock [Minecraft: Bedrock Edition](https://www.microsoft.com/en-ms/p/minecraft-for-windows/9nblggh2jhxj) for free!
 
 
-> ## Note: This is an old version of M Centres, don't use it. This is only for demonstracional porpuses, if you really need it you can download the newer version from [here](https://akshnav.cubebanyasz.me)
+> ## Note: This is an old version of M Centres, don't use it. This is only for demonstracional purposes, if you really need it you can download the newer version from [here](https://akshnav.cubebanyasz.me)
 ## Usage
 
 ### Requirements
